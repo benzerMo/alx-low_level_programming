@@ -14,18 +14,16 @@ int main(void)
 	{
 		for (second_digit = first_digit + 1; second_digit < 10; second_digit++)
 		{
-			putchar('0' + first_digit);
-			putchar('0' + second_digit);
+			printf("%d%d", first_digit, second_digit);
 
 			if (first_digit != 8 || second_digit != 9)
 			{
-				putchar(',');
-				putchar('\t');
+				printf(",\t");
 			}
 		}
 	}
 
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
